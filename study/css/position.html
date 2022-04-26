@@ -32,6 +32,7 @@
 		#fixed {
 			position: fixed;
 			bottom: 10px;
+			right: 0;
 			border: 3px solid blue;
 			background-color: blue;
 		}
@@ -48,6 +49,12 @@
 			border: 3px solid rgb(182, 11, 197);
 			background-color: rgb(182, 11, 197);
 		}
+
+		#top_left {
+			position: absolute;
+			top: 10px;
+			left: 5px;
+		}
 	</style>
 </head>
 <body>
@@ -60,11 +67,14 @@
 		<div id="fixed" class="position">fixed</div>
 	</div>
 
-	<img id="ex_image" src="../images/img_5terre_wide.png" alt="이미지">
-	<div style="position: absolute; left: 10px;">Top Left</div>
-	<div id="Bottom_Left" calss="ex_image_text">Bottom Left</div>
-	<div id="Top_Right" calss="ex_image_text">Top Right</div>
-	<div id="Bottom_Right" calss="ex_image_text">Bottom Right</div>
-	<div id="Center" calss="ex_image_text">Center</div>
+	<div style="position: relative;">
+		<img id="ex_image" src="../images/img_5terre_wide.png" alt="이미지">
+		<div id="top_left">Top Left</div>
+		<!-- <div id="Bottom_Left" calss="ex_image_text">Bottom Left</div>
+		<div id="Top_Right" calss="ex_image_text">Top Right</div>
+		<div id="Bottom_Right" calss="ex_image_text">Bottom Right</div>
+		<div id="Center" calss="ex_image_text">Center</div> -->
+	</div>
+	
 </body>
 </html>
