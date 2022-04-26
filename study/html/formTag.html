@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="Web tutorials">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="author" content="AlpacaJoon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML,CSS 사용해보기</title>
+</head>
+<body>
+    <a href="../index.html">HOME</a>
+
+    <ol>
+        <li>readonly: 읽기만 가능</li>
+        <li>placeholder: input박스 내에 샘플값 혹은 간단한 설명표현 가능</li>
+        <li>required: 필수로 입력해야 제출이 가능 </li>
+    </ol>
+    <!-- form action 속성 -->
+    <form action="제출할 경로">
+        <input type="submit"/>
+    </form>
+    
+    <!-- form method 속성 -->
+    <h1>form action 속성</h1>
+    <ul>
+        <li>get을 이용하여 사용자 정보같은 중요한 데이터를 보내면 안됨.</li>
+        <li>URL 길이는 2048자로 제한됨.</li>
+        <li>key=value 형태의 쿼리스트링으로 데이터가 보내짐.</li>
+    </ul>
+    <form action="index.html" method="get">get
+        <input type="text" name="name" value="alpacajoon"/>
+        <input type="submit"/>
+    </form>
+
+    <ul>
+        <li>post는 제출된 데이터가 url에 표시 안되않음.</li>
+        <li>post는 크기 제한이 없으며 많은 양의 데이터를 보내는 데 사용할 수 있음.</li>
+    </ul>
+    <form action="index.html" method="post">post
+        <input type="text" name="name" value="alpacajoon"/>
+        <input type="submit"/>
+    </form>
+
+    <!-- form target 속성 -->
+    <h1>form target 속성</h1>
+    <form action="index.html" target="_blank">_blank
+        <input type="text" name="name" value="alpacajoon"/>
+        <input type="submit"/>
+    </form>
+
+    <form action="index.html" target="_self">_self
+        <input type="text" name="name" value="alpacajoon"/>
+        <input type="submit"/>
+    </form>
+
+    <!-- _parent, _top, _framename는 iframe 요소와 주로 사용됨 -->
+    <form action="index.html" target="_parent">_parent
+        <input type="text" name="name" value="alpacajoon"/>
+        <input type="submit"/>
+    </form>
+
+    <form action="index.html" target="_top">_top
+        <input type="text" name="name" value="alpacajoon"/>
+        <input type="submit"/>
+    </form>
+
+    <form action="index.html" target="_framename">_framename
+        <input type="text" name="name" value="alpacajoon"/>
+        <input type="submit"/>
+    </form>
+
+    <!-- form autocomplete 속성 -->
+    <h1>form autocomplete 속성</h1>
+    <form action="index.html" autocomplete="on">on
+        <input type="text" name="name"/>
+        <input type="submit"/>
+    </form>
+
+    <form action="index.html" autocomplete="off">off
+        <input type="text" name="name"/>
+        <input type="submit"/>
+    </form>
+    
+    <!-- form novalidate 속성 -->
+    <h1>form novalidate 속성</h1>
+    <form action="index.html">novalidate 미적용
+        <input type="email" name="email" value="alpacajoon.com"/>
+        <input type="submit"/>
+    </form>
+
+    <form action="index.html" novalidate>novalidate 적용
+        <input type="email" name="email" value="alpacajoon.com"/>
+        <input type="submit"/>
+    </form>
+
+    <!-- form enctype 속성 -->
+    <h1>form enctype 속성</h1>
+    enctype: 제출되는 파일양식의 인코딩 방식 작성
+    <form action="index.html" method="post" enctype="multipart/form-data">
+        <input type="file" />
+        <input type="submit"/>
+    </form>
+
+    <!-- form name 속성 -->
+    <h1>form name 속성</h1>
+    name: 자바스크립트에서 name명으로 form태그를 핸들링 할 수 있음
+    <form action="index.html" method="get" name="name_form">
+        <input type="name" name="name" value="alpacajoon"/>
+    </form>
+    <form action="index.html" method="get" name="email_form">
+        <input type="email" name="email" value="alpacajoon.com"/>
+    </form>
+
+    <!-- input -->
+    <h1>input</h1>
+    <ul>
+        <li>label태그의 for속성과 input태그의 id명이 같아야 바인딩됨</li>
+    </ul>
+    <form>
+        <ol>
+            <li>
+                <input type="text" placeholder="아이디를 입력하시옹~" required/>
+            </li>
+            <li>
+                <label for="male">남자</label>
+                <input type="radio" id="male" name="gender"/>
+                <label for="female">여자</label>
+                <input type="radio" id="female" name="gender"/>
+            </li>
+            <li>
+                <input type="checkbox" checked/>커피
+                <input type="checkbox"/>콜라
+                <input type="checkbox"/>사이다
+                <input type="checkbox"/>박카스
+            </li>
+            <li><input type="color">색고르기</li>
+            <li><input type="date">날짜(년,월,일)</li>
+            <li><input type="datetime-local">날짜시간</li>
+            <li><input type="month">날짜(년,월)</li>
+            <li><input type="time">시간</li>
+            <li><input type="email" value="lsj@gmail.com"></li>
+            <li><input type="file"></li>
+            <li><input type="hidden">히든 input</li>
+            <li><input type="number">숫자</li>
+            <li><input type="password">비밀번호</li>
+            <li><input type="range">범위</li>
+            <li><input type="search">검색</li>
+            <li><input type="tel">전화번호</li>
+            <li><input type="url">URL</li>
+            <li><input type="week">1주 가져오기</li>
+            <li><input type="image">이미지 submit</li>
+            <li><input type="submit"/></li>
+            <li><input type="reset"></li>
+            <li><input type="button"/></li>
+        </ol>
+    </form>
+</body>
+</html>
