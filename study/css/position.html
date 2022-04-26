@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<meta name="description" content="Web tutorials">
+	<meta name="keywords" content="HTML">
+	<meta name="author" content="AlpacaJoon">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML TAG 사용해보기</title>
+	<style>
+		.position {
+			height: 50px;
+			color: aliceblue;
+		}
+
+		#ex_image {
+			opacity: 0.3;
+		}
+
+		#defalut {
+			border: 3px solid black;
+			background-color: black;
+		}
+		
+		#relative {
+			position: relative;
+			left: 100px;
+			border: 3px solid red;
+			background-color: red;
+		}
+
+		#fixed {
+			position: fixed;
+			bottom: 10px;
+			border: 3px solid blue;
+			background-color: blue;
+		}
+
+		#absolute {
+			position: absolute;
+			border: 3px solid green;
+			background-color: green;
+		}
+
+		#sticky {
+			position: sticky;
+			top: 0;
+			border: 3px solid rgb(182, 11, 197);
+			background-color: rgb(182, 11, 197);
+		}
+	</style>
+</head>
+<body>
+	<a href="../index.html">HOME</a>
+	<div id="sticky" class="position">sticky</div>
+	<div style="padding-bottom:1000px">
+		<div id="defalut" class="position">defalut</div>
+		<div id="absolute" class="position">absolute</div>
+		<div id="relative" class="position">relative</div>
+		<div id="fixed" class="position">fixed</div>
+	</div>
+
+	<img id="ex_image" src="../images/img_5terre_wide.png" alt="이미지">
+	<div style="position: absolute; left: 10px;">Top Left</div>
+	<div id="Bottom_Left" calss="ex_image_text">Bottom Left</div>
+	<div id="Top_Right" calss="ex_image_text">Top Right</div>
+	<div id="Bottom_Right" calss="ex_image_text">Bottom Right</div>
+	<div id="Center" calss="ex_image_text">Center</div>
+</body>
+</html>
