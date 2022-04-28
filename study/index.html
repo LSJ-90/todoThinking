@@ -7,60 +7,90 @@
 	<meta name="author" content="AlpacaJoon">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>HTML TAG 사용해보기</title>
+	<style>
+		a, a:link {
+			color: #000;
+			text-decoration: none;
+			font-family: 'Recipekorea';
+		}
+		ul {
+			list-style: none;
+			text-align: center;
+		}
+		ul li a {
+		display: block;
+		padding: 10px;
+		position: relative;
+		}
+		
+		ul li a::after {
+		content: '';
+		display: block;
+		position: absolute;
+		bottom: 0;
+		z-index: -1;
+		}
+		
+		.menu li a::after {
+		width: 0;
+		height: 100%;
+		background: #01143c;
+		left: 50%;
+		}
+
+		ul li a:hover::after {
+		width: 100%;
+		left: 0;
+		transition: all .3s;
+		}
+		.menu li a:hover {
+		color: #fff;
+		}
+	</style>
 </head>
 <body>
 	<!-- href: hypertext reference -->
-	
 	<a href="index.html"><img src="images/logo.png" alt=""></a>
+	<div>
+
+	</div>
 	<p>
 		&lt;p&gt;tag 사용<br/>
 		안녕~ 오늘도 왔구나!
-		이 파일은 HTML, CSS 정리파일이야~<br/>
+		이 파일은 HTML, CSS, JavaScipt 정리파일이야~<br/>
 		오늘도 열심히 정리해보자!<hr/>
 	</p>
 	<pre>
 		&lt;pre&gt;tag 사용
 		안녕~ 오늘도 왔구나!
-		이 파일은 HTML, CSS 정리파일이야~
+		이 파일은 HTML, CSS, JavaScipt 정리파일이야~
 		오늘도 열심히 정리해보자!<hr/>
 	</pre>
 	
-	<select>
-		<option>1</option>
-		<option>2</option>
-		<option>3</option>
-	</select>
-	
-	<!-- dl: Definition List
-		 dt: Definition Title 
-		 dd: Definition Description 
-	-->
-	<dl>
-		<dt>dl</dt>
-		<dd>설명 목록을 정의</dd>
-		<dt>dt</dt>
-		<dd>설명할 용어 혹은 이름 작성</dd>
-		<dt>dd</dt>
-		<dd>설명 작성</dd>
-	</dl>
-	
 	<h1>HTML</h1>
-	<ul>
-		<li>
-			<a href="html/hTag.html">h tag</a>
-		</li>
+	<ul class="menu">
 		<li>
 			<a href="html/metaTag.html">meta tag</a>
-		</li>
-		<li>
-			<a href="html/formattingTag.html">formatting tag</a>
 		</li>
 		<li>
 			<a href="html/formTag.html">form tag</a>
 		</li>
 		<li>
+			<a href="html/selectBox.html">selectBox tag</a>
+		</li>
+		<li>
+			<a href="html/input.html">input tag</a>
+		</li>
+		<li>
 			<a href="html/tableTag.html">table tag</a>
 		</li>
+		<li>
+			<a href="html/hTag.html">h tag</a>
+		</li>
+		<li>
+			<a href="html/formattingTag.html">formatting tag</a>
+		</li>
+		
 	</ul>
 
 	<h1>CSS</h1>
@@ -68,22 +98,18 @@
 		<li>
 			<a href="css/position.html">position</a>
 		</li>
+		<li>
+			<a href="css/ID&CLASS&NAME.html">id & class & name 차이점</a>
+		</li>
 	</ul>	
 	
 	<h1>ETC</h1>
 	<ul>
-		<li>
-			<a href="ID&CLASS&NAME.html">id & class & name 차이점</a>
-		</li>
+		
 	</ul>
 
 
 	
-	<iframe src="file:///C:/projects/vs-workspace/todoThinking/todoThinking/study/index.html"></iframe>
-	
-	
-	
-	
-	
+	<iframe src="index.html"></iframe>
 </body>
 </html>

@@ -9,47 +9,25 @@
 	<title>HTML TAG 사용해보기</title>
 	<style>
 		.position {
-			height: 50px;
-			color: aliceblue;
+			width: 200px;
+			height: 200px;
+			color: white;
+			margin-bottom: 20px;
+			box-sizing: border-box;
 		}
-
+		
+		.testDiv {
+			width: 200px;
+			height: 200px;
+			margin-bottom: 20px;
+			background-color: hotpink;
+		}
+		
 		#ex_image {
 			opacity: 0.3;
 		}
-
-		#defalut {
-			border: 3px solid black;
-			background-color: black;
-		}
 		
-		#relative {
-			position: relative;
-			left: 100px;
-			border: 3px solid red;
-			background-color: red;
-		}
-
-		#fixed {
-			position: fixed;
-			bottom: 10px;
-			right: 0;
-			border: 3px solid blue;
-			background-color: blue;
-		}
-
-		#absolute {
-			position: absolute;
-			border: 3px solid green;
-			background-color: green;
-		}
-
-		#sticky {
-			position: sticky;
-			top: 0;
-			border: 3px solid rgb(182, 11, 197);
-			background-color: rgb(182, 11, 197);
-		}
-
+		
 		#top_left {
 			position: absolute;
 			top: 10px;
@@ -61,7 +39,7 @@
 			bottom: 10px;
 			left: 5px;
 		}
-
+		
 		#top_right {
 			position: absolute;
 			top: 10px;
@@ -81,18 +59,38 @@
 			text-align: center;
 			border: 1px solid red;
 		}
+		
+		#testBox {
+			position: absolute;
+			background-color: red;
+			top: 30px;
+			left: 30px;
+		}
 	</style>
 </head>
 <body>
-	<a href="../index.html">HOME</a>
-	<div id="sticky" class="position">sticky</div>
-	<div style="padding-bottom:1000px">
-		<div id="defalut" class="position">defalut</div>
-		<div id="absolute" class="position">absolute</div>
-		<div id="relative" class="position">relative</div>
-		<div id="fixed" class="position">fixed</div>
+	<a href="../index.html"><img src="../images/logo.png" alt=""></a>
+	<ul>
+		<li>static</li>
+		<li>relative</li>
+		<li>fixed</li>
+		<li>absolute</li>
+		<li>sticky</li>
+	</ul>
+	<div style="position: relative;">
+		<div class="testDiv"></div>
+		<div class="testDiv"></div>
+		<div id="testBox" class="position">test box</div>
+		<div class="testDiv"></div>
+		<div class="testDiv"></div>
+		<div class="testDiv"></div>
+		<div class="testDiv"></div>
+		<div class="testDiv"></div>
+		<div class="testDiv"></div>
+		<div class="testDiv"></div>
+		<div class="testDiv"></div>
 	</div>
-
+	
 	<div style="position: relative;">
 		<img id="ex_image" src="../images/img_5terre_wide.png" alt="이미지">
 		<div id="top_left" class="ex_image_text">Top Left</div>
