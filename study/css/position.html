@@ -8,12 +8,24 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>HTML TAG 사용해보기</title>
 	<style>
+
+		#boxes {
+			position: relative;
+		}
+
 		.position {
 			width: 200px;
 			height: 200px;
 			color: white;
 			margin-bottom: 20px;
 			box-sizing: border-box;
+		}
+
+		#testBox {
+			position: relative;
+			background-color: red;
+			top: 0px;
+			left: 0px;
 		}
 		
 		.testDiv {
@@ -59,13 +71,6 @@
 			text-align: center;
 			border: 1px solid red;
 		}
-		
-		#testBox {
-			position: absolute;
-			background-color: red;
-			top: 30px;
-			left: 30px;
-		}
 	</style>
 </head>
 <body>
@@ -77,18 +82,18 @@
 		<li>absolute</li>
 		<li>sticky</li>
 	</ul>
-	<div style="position: relative;">
-		<div class="testDiv"></div>
-		<div class="testDiv"></div>
+	<div id="boxes">
+		<div id="box1" class="testDiv">1</div>
+		<div id="box2" class="testDiv">2</div>
 		<div id="testBox" class="position">test box</div>
-		<div class="testDiv"></div>
-		<div class="testDiv"></div>
-		<div class="testDiv"></div>
-		<div class="testDiv"></div>
-		<div class="testDiv"></div>
-		<div class="testDiv"></div>
-		<div class="testDiv"></div>
-		<div class="testDiv"></div>
+		<div id="box3" class="testDiv">3</div>
+		<div id="box4" class="testDiv">4</div>
+		<div id="box5" class="testDiv">5</div>
+		<div id="box6" class="testDiv">6</div>
+		<div id="box7" class="testDiv">7</div>
+		<div id="box8" class="testDiv">8</div>
+		<div id="box9" class="testDiv">9</div>
+		<div id="box10" class="testDiv">10</div>
 	</div>
 	
 	<div style="position: relative;">

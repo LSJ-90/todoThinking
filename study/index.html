@@ -6,17 +6,27 @@
 	<meta name="keywords" content="HTML">
 	<meta name="author" content="AlpacaJoon">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>HTML TAG 사용해보기</title>
+	<title>Study Site 화로 정리 해보기</title>
 	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		
+		h1 {
+			text-align: center;
+			margin-top: 20px;
+		}
+
 		a, a:link {
 			color: #000;
 			text-decoration: none;
-			font-family: 'Recipekorea';
 		}
 		ul {
 			list-style: none;
 			text-align: center;
 		}
+
 		ul li a {
 		display: block;
 		padding: 10px;
@@ -40,20 +50,20 @@
 
 		ul li a:hover::after {
 		width: 100%;
-		left: 0;
-		transition: all .3s;
+		left:0;
+		transition: all .9s ease;
 		}
+		
 		.menu li a:hover {
 		color: #fff;
 		}
+		
 	</style>
 </head>
 <body>
 	<!-- href: hypertext reference -->
 	<a href="index.html"><img src="images/logo.png" alt=""></a>
-	<div>
-
-	</div>
+	
 	<p>
 		&lt;p&gt;tag 사용<br/>
 		안녕~ 오늘도 왔구나!
@@ -90,11 +100,13 @@
 		<li>
 			<a href="html/formattingTag.html">formatting tag</a>
 		</li>
-		
 	</ul>
 
 	<h1>CSS</h1>
-	<ul>
+	<ul class="menu">
+		<li>
+			<a href="css/block-inline.html">block&inline</a>
+		</li>
 		<li>
 			<a href="css/position.html">position</a>
 		</li>
@@ -104,7 +116,14 @@
 	</ul>	
 	
 	<h1>ETC</h1>
-	<ul>
+	<ul class="menu">
+		<li>
+			<a href="etc/coding-notion.html">코딩 표기법</a>
+		</li>
+		<li>
+			<a href="etc/path.html">절대경로와 상대경로</a>
+		</li>
+
 		
 	</ul>
 

@@ -10,16 +10,21 @@
 </head>
 <body>
     <a href="../index.html"><img src="../images/logo.png" alt=""></a>
-<!-- input -->
-<h1>input</h1>
-<ul>
-    <li>label태그의 for속성과 input태그의 id명이 같아야 바인딩됨</li>
-    <li>서버에 데이터를 제출할 때 name명이 쿼리스트링의 KEY가 됨</li>
-</ul>
+    <!-- input -->
+    <ol>
+        <li>readonly: 읽기만 가능</li>
+        <li>placeholder: input박스 내에 샘플값 혹은 간단한 설명표현 가능</li>
+        <li>required: 필수로 입력해야 제출이 가능 </li>
+    </ol>
+    <h1>input</h1>
+    <ul>
+        <li>label태그의 for속성과 input태그의 id명이 같아야 바인딩됨</li>
+        <li>서버에 데이터를 제출할 때 name명이 쿼리스트링의 KEY가 됨</li>
+    </ul>
     <form>
         <ol>
             <li>
-                <input type="text" placeholder="아이디를 입력하시옹~" required/>
+                <input type="text" placeholder="아이디를 입력하시옹~" name="userId" required/>
             </li>
             <li>
                 <label for="male">남자</label>
