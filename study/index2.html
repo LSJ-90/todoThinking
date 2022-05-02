@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<meta name="description" content="Web tutorials">
+	<meta name="keywords" content="HTML">
+	<meta name="author" content="AlpacaJoon">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Study Site 화로 정리 해보기</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		h1 {
+			text-align: center;
+			margin-top: 20px;
+		}
+
+		a, a:link {
+			color: #000;
+			text-decoration: none;
+		}
+		ul {
+			list-style: none;
+			text-align: center;
+		}
+
+		ul li a {
+		display: block;
+		padding: 10px;
+		position: relative;
+		}
+		
+		ul li a::before {
+		content: '12312313';
+		display: block;
+		position: absolute;
+		bottom: 0;
+		z-index: -1;
+		}
+		
+		.menu li a::before {
+		width: 0;
+		height: 100%;
+		background: #01143c;
+		left: 50%;
+		}
+
+		ul li a:hover::before {
+		width: 100%;
+		left:0;
+		transition: all .9s ease;
+		}
+		
+		.menu li a:hover {
+		color: #fff;
+		}
+		
+	</style>
+</head>
+<body>
+	<!-- href: hypertext reference -->
+	<a href="index.html"><img src="images/logo.png" alt=""></a>
+	
+	<p>
+		&lt;p&gt;tag 사용<br/>
+		안녕~ 오늘도 왔구나!
+		이 파일은 HTML, CSS, JavaScipt 정리파일이야~<br/>
+		오늘도 열심히 정리해보자!<hr/>
+	</p>
+	<pre>
+		&lt;pre&gt;tag 사용
+		안녕~ 오늘도 왔구나!
+		이 파일은 HTML, CSS, JavaScipt 정리파일이야~
+		오늘도 열심히 정리해보자!<hr/>
+	</pre>
+	
+	<h1>HTML</h1>
+	<ul class="menu">
+		<li>
+			<a href="html/metaTag.html">meta tag</a>
+		</li>
+		<li>
+			<a href="html/formTag.html">form tag</a>
+		</li>
+		<li>
+			<a href="html/selectBox.html">selectBox tag</a>
+		</li>
+		<li>
+			<a href="html/input.html">input tag</a>
+		</li>
+		<li>
+			<a href="html/tableTag.html">table tag</a>
+		</li>
+		<li>
+			<a href="html/hTag.html">h tag</a>
+		</li>
+		<li>
+			<a href="html/formattingTag.html">formatting tag</a>
+		</li>
+	</ul>
+
+	<h1>CSS</h1>
+	<ul class="menu">
+		<li>
+			<a href="css/block-inline.html">block&inline</a>
+		</li>
+		<li>
+			<a href="css/position.html">position</a>
+		</li>
+		<li>
+			<a href="css/ID&CLASS&NAME.html">id & class & name 차이점</a>
+		</li>
+		<li>
+			<a href="css/before-after.html">before&after</a>
+		</li>
+	</ul>	
+	
+	<h1>JavaScipt</h1>
+	<ul class="menu">
+	</ul>	
+
+	<h1>ETC</h1>
+	<ul class="menu">
+		<li>
+			<a href="etc/coding-notion.html">코딩 표기법</a>
+		</li>
+		<li>
+			<a href="etc/path.html">절대경로와 상대경로</a>
+		</li>
+
+		
+	</ul>
+
+
+	
+	<iframe src="index.html"></iframe>
+</body>
+</html>
