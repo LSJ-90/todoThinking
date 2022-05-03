@@ -94,7 +94,7 @@
 		<li>
 			<a href="#"><h1>JavaScipt</h1></a>
 			<ul class="menu">
-				<a href="javascript/hoisting.html"><li>hoistion</li></a>
+				<a href="javascript/hoisting.html"><li>hoisting</li></a>
 			</ul>	
 		</li>
 		<li>
@@ -107,6 +107,7 @@
 	</ul>
 </header>
 <body>
+	<button id="ex_input">나는 버튼</button>
 	<p>
 		&lt;p&gt;tag 사용<br/>
 		안녕~ 오늘도 왔구나!
@@ -119,10 +120,16 @@
 		이 파일은 HTML, CSS, JavaScipt 정리파일이야~
 		오늘도 열심히 정리해보자!<hr/>
 	</pre>
+	
 
 	<iframe src="index.html"></iframe>
 <script>
 
+	var inputValue = document.querySelector("button");
+	inputValue.onclick =  function() {
+		alert("안뇽~");
+	};
+	
 </script>
 </body>
 </html>
